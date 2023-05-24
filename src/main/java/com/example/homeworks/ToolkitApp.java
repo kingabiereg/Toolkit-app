@@ -64,16 +64,16 @@ public class ToolkitApp {
                 + "\nSize: " + tool.getToolSize().size() + " " + tool.getToolSize().unit());
     }
 
-    private static void findTool(ToolkitRepository toolkitController) {
+    private static void findTool(ToolkitRepository toolkitRepository) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Write a tool name: ");
         String findTool = scanner.nextLine().toLowerCase();
 
-        if (toolkitController.getTools().stream()
+        if (toolkitRepository.getTools().stream()
                 .anyMatch(tool -> tool.getName().contains(findTool))) {
             System.out.println("There is a " + findTool + " in toolkit.");
 
-            (toolkitController.getTools().stream()
+            (toolkitRepository.getTools().stream()
                     .filter(tool -> tool.getName().contains(findTool)))
                     .forEach(ToolkitApp::showTool);
         } else {
@@ -81,7 +81,7 @@ public class ToolkitApp {
         }
     }
 
-    private static void addTool(ToolkitRepository toolkitController) {
+    private static void addTool(ToolkitRepository toolkitRepository) {
 
         Scanner scanner = new Scanner(System.in);
         String name = " ";
@@ -128,18 +128,18 @@ public class ToolkitApp {
         }
 
         Tool tool = new Tool(name, new Tool.ToolSize(size, unit));
-        toolkitController.add(tool);
+        toolkitRepository.add(tool);
 
         System.out.println("Succesfully added:\n" + tool.getName()
                 + "\nsize: " + tool.getToolSize().size() + " " + tool.getToolSize().unit());
     }
 
-    private static void countTools(ToolkitRepository toolkitController) {
+    private static void countTools(ToolkitRepository toolkitRontroller) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Write a tool name: ");
         String findTool = scanner.nextLine().toLowerCase();
 
-        long countTools = toolkitController.getTools().stream().filter(tool -> tool.getName().contains(findTool)).count();
+        long countTools = toolkitRontroller.getTools().stream().filter(tool -> tool.getName().contains(findTool)).count();
         System.out.println("There are " + countTools + " " + findTool + " " + "in toolkit");
 
     }
