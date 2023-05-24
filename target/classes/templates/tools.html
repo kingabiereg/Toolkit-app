@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th> Name </th>
+        <th> Tool Size </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${tools.empty}">
+        <td colspan="2"> No Tools Available </td>
+    </tr>
+    <tr th:each="tool : ${tools}">
+        <td><span th:text="${tool.name}"> Name </span></td>
+        <td><span th:text="${tool.toolSize}"> Tool Size </span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
