@@ -7,31 +7,42 @@
         rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
         crossorigin="anonymous">
 </head>
-<!--<body>-->
-<!--<form action="#" th:action="@{add}" th:object="${tool}"-->
-<!--      method="post">-->
-<!--  <fieldset>-->
-<!--    <input type="submit" id="submitButton" th:value="Save">-->
-<!--    <input type="reset" id="resetButton" name="reset" th:value="Reset"/>-->
-<!--    <table>-->
-<!--      <thead>-->
-<!--      <tr>-->
-<!--        <th> Name</th>-->
-<!--        <th> Size</th>-->
-<!--        <th> Unit</th>-->
+<body>
+<div class="container p-5">
+<form action="/add" method="post" class="g-3 border border-2 rounded p-4">
+    <p class="fs-3 mb-2">Add tool</p>
+        <div class="row my-3">
+            <div class="col-md-6 col-12">
+                <div>
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text"   id="name" name="name">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-6 col-12">
+                    <div>
+                        <label for="size" class="form-label">Size</label>
+                        <input type="text"  id="size">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-6 col-12">
+                        <div>
+                            <label for="unit" class="form-label">Unit</label>
+                          <input type="text" id="unit">
+                        </div>
+                    </div>
 
-<!--      </tr>-->
-<!--      </thead>-->
-<!--      <tbody>-->
-<!--      <tr th:each="tool, itemStat : *{tools}">-->
-<!--        <td><input th:field="*{tools[__${itemStat.tool}__].name}" /></td>-->
-<!--        <td><input th:field="*{tools[__${itemStat.tools}__].size}" /></td>-->
-<!--        <td><input th:field="*{tools[__${itemStat.tools}__].unit}" /></td>-->
-
-<!--      </tr>-->
-<!--      </tbody>-->
-<!--    </table>-->
-<!--  </fieldset>-->
-<!--</form>-->
-<!--</body>-->
+    </div>
+                <div class="row my-3">
+                    <div class="col-12">
+                        <a class="btn btn-outline-info" th:href="@{/tools}">Save</a>
+                        <button type="reset" class="btn btn-outline-info" >Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</form>
+</div>
+</body>
 </html>

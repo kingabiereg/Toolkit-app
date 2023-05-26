@@ -134,12 +134,12 @@ public class ToolkitApp {
                 + "\nsize: " + tool.getToolSize().size() + " " + tool.getToolSize().unit());
     }
 
-    private static void countTools(ToolkitRepository toolkitRontroller) {
+    private static void countTools(ToolkitRepository toolkitRepository) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Write a tool name: ");
         String findTool = scanner.nextLine().toLowerCase();
 
-        long countTools = toolkitRontroller.getTools().stream().filter(tool -> tool.getName().contains(findTool)).count();
+        long countTools = toolkitRepository.getTools().stream().filter(tool -> tool.getName().contains(findTool)).count();
         System.out.println("There are " + countTools + " " + findTool + " " + "in toolkit");
 
     }
