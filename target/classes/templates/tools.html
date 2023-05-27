@@ -26,9 +26,9 @@
     <tr th:if="${tools.empty}">
         <td colspan="2"> No Tools Available </td>
     </tr>
-    <tr th:each="tool : ${tools}">
-        <td><span th:text="${tool.name}"> Name </span></td>
-        <td><span th:text="${tool.toolSize}"> Size </span></td>
+    <tr th:each="tools : ${tools}">
+        <td><span th:text="${tools.name}"> Name </span></td>
+        <td><span th:text="${tools.toolSize}"> Size </span></td>
     </tr>
     </tbody>
 </table>

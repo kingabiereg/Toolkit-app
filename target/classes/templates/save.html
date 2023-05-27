@@ -8,6 +8,27 @@
         crossorigin="anonymous">
 </head>
 <body>
-
+<div th:fragment="content" class="container">
+    <div class="card mt-5" style="width: 50%; margin: 0 auto;">
+        <div class="card-top text-center p-3">
+            <h3 class="card-title">LIST OF TOOLS</h3>
+        </div>
+        <table class="table table-striped mt-5">
+            <thead>
+            <tr>
+                <th> Name </th>
+                <th> Size </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:if="${tools.empty}">
+                <td colspan="2"> No Tools Available </td>
+            </tr>
+            <tr th:each="tools : ${tools}">
+                <td><span th:text="${tools.name}"> Name </span></td>
+                <td><span th:text="${tools.toolSize}"> Size </span></td>
+            </tr>
+            </tbody>
+        </table>
 </body>
 </html>

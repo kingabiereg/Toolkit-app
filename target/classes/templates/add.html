@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container p-5">
-<form th:action="add" method="post" class="g-3 border border-2 rounded p-4">
+<form action="/add" method="post" class="g-3 border border-2 rounded p-4">
     <p class="fs-3 mb-2">Add tool</p>
         <div class="row my-3">
             <div class="col-md-6 col-12">
@@ -36,7 +36,7 @@
     </div>
                 <div class="row my-3">
                     <div class="col-12">
-                        <a class="btn btn-outline-info" th:href="@{/tools}">Save</a>
+                        <a class="btn btn-outline-info" th:href="@{/save}">Save</a>
                         <button type="reset" class="btn btn-outline-info" >Reset</button>
                     </div>
                 </div>

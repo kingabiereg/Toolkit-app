@@ -30,7 +30,7 @@ public class ToolkitController {
         return "add";
     }
 
-    @PostMapping("/tools")
+    @PostMapping("/add")
     public String addTool(@RequestParam("name") String name,
                           @RequestParam ("size") float size,
                           @RequestParam ("unit") String unit, Model model) {
@@ -40,7 +40,12 @@ public class ToolkitController {
         model.addAttribute("tools", tools);
         return "add";
     }
-
+    @GetMapping("/save")
+    public String showAddedTools(Model model) {
+        List<Tool> tools = toolkitRepository.getTools();
+        model.addAttribute("tools", tools);
+        return "tools";
+    }
 }
 
 
