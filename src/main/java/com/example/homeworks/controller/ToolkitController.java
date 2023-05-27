@@ -1,6 +1,8 @@
-package com.example.homeworks;
+package com.example.homeworks.controller;
 
 
+import com.example.homeworks.model.Tool;
+import com.example.homeworks.repository.ToolkitRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

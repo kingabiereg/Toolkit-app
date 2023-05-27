@@ -1,5 +1,6 @@
-package com.example.homeworks;
+package com.example.homeworks.repository;
 
+import com.example.homeworks.model.Tool;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Repository;

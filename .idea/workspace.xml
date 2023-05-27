@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="37682028-6f07-4abe-98d4-366443186e72" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/homeworks/ToolkitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/homeworks/ToolkitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/homeworks/ToolkitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/homeworks/ToolkitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/homeworks/ToolkitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/homeworks/controller/ToolkitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/toolkit.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/toolkit.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/toolkit.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/toolkit.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,10 +91,10 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.HomeworksApplication">
-    <configuration name="HomeworksApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ToolkitApplication">
+    <configuration name="ToolkitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="homeworks" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.homeworks.HomeworksApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.homeworks.ToolkitApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,16 +137,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/homeworks/ToolkitController.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.example.homeworks;
+package com.example.homeworks.model;
 
 public class Tool {
     private String name;
