@@ -25,10 +25,12 @@ public class ToolkitController {
 
     @GetMapping("/add")
     public String addTool(Model model) {
+        List<Tool> tools = toolkitRepository.getTools();
+        model.addAttribute("tools", tools);
         return "add";
     }
 
-    @PostMapping("/add")
+    @PostMapping("/tools")
     public String addTool(@RequestParam("name") String name,
                           @RequestParam ("size") float size,
                           @RequestParam ("unit") String unit, Model model) {
@@ -36,8 +38,7 @@ public class ToolkitController {
         toolkitRepository.add(addTool);
         List<Tool> tools = toolkitRepository.getTools();
         model.addAttribute("tools", tools);
-        System.out.println(tools);
-        return "redirect:tools";
+        return "add";
     }
 
 }
