@@ -38,13 +38,7 @@ public class ToolkitController {
         toolkitRepository.add(addTool);
         List<Tool> tools = toolkitRepository.getTools();
         model.addAttribute("tools", tools);
-        return "add";
-    }
-    @GetMapping("/save")
-    public String showAddedTools(Model model) {
-        List<Tool> tools = toolkitRepository.getTools();
-        model.addAttribute("tools", tools);
-        return "tools";
+        return "redirect:tools";
     }
 }
 
