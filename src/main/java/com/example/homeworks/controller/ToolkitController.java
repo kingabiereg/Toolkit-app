@@ -18,29 +18,39 @@ public class ToolkitController {
         this.toolkitRepository = toolkitRepository;
     }
 
-    @GetMapping("/tools")
+    @GetMapping("/")
     public String getTools(Model model) {
         List<Tool> tools = toolkitRepository.getTools();
         model.addAttribute("tools", tools);
-        return "tools";
+        return "index";
     }
 
     @GetMapping("/add")
     public String addTool(Model model) {
-        List<Tool> tools = toolkitRepository.getTools();
-        model.addAttribute("tools", tools);
         return "add";
     }
 
     @PostMapping("/add")
     public String addTool(@RequestParam("name") String name,
-                          @RequestParam ("size") float size,
-                          @RequestParam ("unit") String unit, Model model) {
+                          @RequestParam("size") float size,
+                          @RequestParam("unit") String unit, Model model) {
         Tool addTool = new Tool(name, new Tool.ToolSize(size, unit));
         toolkitRepository.add(addTool);
         List<Tool> tools = toolkitRepository.getTools();
         model.addAttribute("tools", tools);
-        return "redirect:tools";
+        return "redirect:/";
+    }
+
+    @GetMapping("/search")
+    public String searchTool(Model model) {
+        return "search";
+    }
+
+    @PostMapping("/search")
+    public String searchTool(@RequestParam("name") String name, Model model) {
+        List<Tool> searchTool = toolkitRepository.searchTool(name);
+        model.addAttribute("search", searchTool);
+        return "list";
     }
 }
 
