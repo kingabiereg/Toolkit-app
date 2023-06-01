@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37682028-6f07-4abe-98d4-366443186e72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_05_2023__19_00__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/homeworks/controller/ToolkitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/homeworks/controller/ToolkitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/homeworks/repository/ToolkitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/homeworks/repository/ToolkitRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/toolkit.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/toolkit.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/homeworks/controller/ToolkitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/homeworks/controller/ToolkitController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/homeworks/repository/ToolkitRepository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/homeworks/repository/ToolkitRepository$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/homeworks/repository/ToolkitRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/homeworks/repository/ToolkitRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/tools.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/toolkit.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/toolkit.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +136,7 @@
       <workItem from="1685624275132" duration="445000" />
       <workItem from="1685632488603" duration="573000" />
       <workItem from="1685643240442" duration="2555000" />
-      <workItem from="1685646264410" duration="1283000" />
+      <workItem from="1685646264410" duration="2729000" />
     </task>
     <servers />
   </component>
