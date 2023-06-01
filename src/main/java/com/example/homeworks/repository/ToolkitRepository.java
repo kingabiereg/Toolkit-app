@@ -4,12 +4,14 @@ import com.example.homeworks.model.Tool;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Repository;
+import java.util.function.Predicate;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Repository
@@ -31,6 +33,13 @@ public class ToolkitRepository {
     public boolean add(Tool tool) {
         tools.add(tool);
         return saveToolkit();
+    }
+    public List<Tool> searchTool (String name ) {
+
+        List<Tool> findToolByName = tools.stream().filter(tool -> tool.getName().contains(name)).collect(Collectors.toList());
+//                toolkitRepository.getTools().stream().filter(tool -> tool.getName()
+//                .contains(name)).collect(Collectors.toList());
+        return findToolByName;
     }
 
     private static List<Tool> readToolkit() {

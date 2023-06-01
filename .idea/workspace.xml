@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37682028-6f07-4abe-98d4-366443186e72" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_05_2023__19_00__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/homeworks/ToolkitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/homeworks/controller/ToolkitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/homeworks/controller/ToolkitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/homeworks/controller/ToolkitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/homeworks/repository/ToolkitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/homeworks/repository/ToolkitRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/toolkit.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/toolkit.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/homeworks/controller/ToolkitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/homeworks/controller/ToolkitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/homeworks/repository/ToolkitRepository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/homeworks/repository/ToolkitRepository$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/homeworks/repository/ToolkitRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/homeworks/repository/ToolkitRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/tools.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/toolkit.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/toolkit.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +79,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kinga/Desktop/jjdzr11-materialy-HTML-CSS-Bootstrap-JS-AJAX&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kinga/Desktop/homework-zad4&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -121,6 +127,23 @@
       <workItem from="1685028130235" duration="13949000" />
       <workItem from="1685090460347" duration="2859000" />
       <workItem from="1685129923623" duration="4606000" />
+      <workItem from="1685271009362" duration="7569000" />
+      <workItem from="1685290511790" duration="1213000" />
+      <workItem from="1685292327272" duration="253000" />
+      <workItem from="1685294037413" duration="48000" />
+      <workItem from="1685294094389" duration="59000" />
+      <workItem from="1685294503766" duration="19000" />
+      <workItem from="1685294529804" duration="135000" />
+      <workItem from="1685294672452" duration="97000" />
+      <workItem from="1685294776592" duration="39000" />
+      <workItem from="1685294877174" duration="6844000" />
+      <workItem from="1685479280049" duration="2915000" />
+      <workItem from="1685607974609" duration="3205000" />
+      <workItem from="1685622100289" duration="857000" />
+      <workItem from="1685624275132" duration="445000" />
+      <workItem from="1685632488603" duration="573000" />
+      <workItem from="1685643240442" duration="2555000" />
+      <workItem from="1685646264410" duration="1283000" />
     </task>
     <servers />
   </component>
