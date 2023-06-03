@@ -4,7 +4,6 @@ import com.example.homeworks.model.Tool;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Repository;
-import java.util.function.Predicate;
 
 import java.io.File;
 import java.io.IOException;
@@ -34,11 +33,10 @@ public class ToolkitRepository {
         tools.add(tool);
         return saveToolkit();
     }
-    public List<Tool> searchTool (String name ) {
+
+    public List<Tool> searchTool(String name) {
 
         List<Tool> findToolByName = tools.stream().filter(tool -> tool.getName().contains(name)).collect(Collectors.toList());
-//                toolkitRepository.getTools().stream().filter(tool -> tool.getName()
-//                .contains(name)).collect(Collectors.toList());
         return findToolByName;
     }
 
@@ -47,13 +45,15 @@ public class ToolkitRepository {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             File file = new File("src/main/resources/toolkit.json");
-            return objectMapper.readValue(file, new TypeReference<List<Tool>>(){});
+            return objectMapper.readValue(file, new TypeReference<List<Tool>>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
             return Collections.emptyList();
         }
 
     }
+
     private boolean saveToolkit() {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
